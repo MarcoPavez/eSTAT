@@ -1,36 +1,63 @@
-import {
-    createBrowserRouter,
-    RouterProvider,
-    Route
-} from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import Catalogue from "./pages/Catalogue"
-import Register from "./pages/Register"
-import Login from "./pages/Login"
+import Home from "./pages/Home"
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+
+import Services from "./pages/Services";
+import SingleService from "./pages/SingleService"
+
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
+import "./style.scss"
+
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
 const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element:  <Layout/>,
+    children: [
+      {
         path: "/",
-        element: <div>Página principal</div>
-    },
-    {
-        path: "/register",
-        element: <Register/>
-    },
-    {
-        path: "/login",
-        element: <Login/>
-    },
-    {
-        path: "/catalogue",
-        element: <Catalogue/>
-    }
-])
+        element: <Home />
+      },
+      {
+        path: "/services",
+        element: <Services />
+      },
+      {
+        path: "/services/:id",
+        element: <SingleService />
+      }
+    ]
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  }
+  
+]);
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={router}/>
+    <div className="aplicacion">
+      
+        <RouterProvider router={router} />
+      
     </div>
   );
 }
