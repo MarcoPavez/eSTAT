@@ -8,19 +8,19 @@ const Home = () => {
         <h2>La mano amiga en tu proceso de investigación</h2>
       </div>
       <div className="explicacionServicios">
-        <h4>
-          ¡Estudiante! <br/>Te orientamos en la construcción de tu tesis <br/>Ofrecemos
-          servicios estadísticos para que cumplas con tu metodología <br/>En el
-          difícil camino de investigar, nos ajustamos a tus tiempos <br/>Accesible,
-          cómodo y sencillo
-        </h4>
+        <h2>¡Estudiante! </h2>
+        <h2>Te orientamos en la construcción de tu tesis </h2>
+        <h2>
+          {" "}
+          Ofrecemos servicios estadísticos para que cumplas con tu metodología
+        </h2>
+        <h3>En el difícil camino de investigar, nos ajustamos a tus tiempos</h3>
+        <h3>Accesible, cómodo y sencillo</h3>
       </div>
       <div className="serviciosOfertados">
-        <h4>
-          Nuestros servicios son <br/>
-          Minería de datos <br/>Gestión de datos <br/>Análisis de datos: estadística
-          descriptiva e inferencial
-        </h4>
+        <h3>Nuestros servicios son: </h3>
+        <h4>Minería de datos </h4> <h4>Gestión de datos </h4>{" "}
+        <h4> Análisis de datos: estadística descriptiva e inferencial</h4>
       </div>
     </div>
   );
