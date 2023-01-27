@@ -19,8 +19,19 @@ const Home = () => {
       </div>
       <div className="serviciosOfertados">
         <h3>Nuestros servicios son: </h3>
-        <h4>Minería de datos </h4> <h4>Gestión de datos </h4>{" "}
-        <h4> Análisis de datos: estadística descriptiva e inferencial</h4>
+        <div className="listaServiciosOfertados">
+          <ul>
+            <li>
+              <h4>Minería de datos </h4>
+            </li>
+            <li>
+              <h4>Análisis de datos </h4>
+            </li>
+            <li>
+              <h4> Gestión de datos</h4>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
