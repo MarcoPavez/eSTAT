@@ -3,19 +3,19 @@
   flex-direction: column;
   gap: 20px;
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   //HOME
 
-  .home {
+  .inicio {
     display: flex;
     flex-direction: column;
     gap: 150px;
-    color: aliceblue;
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(102, 17, 17, 1) 35%,
-      rgba(58, 204, 233, 1) 100%
-    );
+    color: black;
+
 
     .presentacion {
       display: flex;
@@ -44,5 +44,81 @@
         }
       }
     }
+  }
+
+  //NAVBAR
+  .barraNavegacion {
+
+    display: flex;
+    flex-direction: column;
+
+    .subidaBarraNavegacion {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      background-color: white;
+      font-size: smaller;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style: none;
+        margin-bottom: 1px;
+      }
+
+    }
+
+
+    .bajadaBarraNavegacion {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(33, 74, 112);
+
+      .logo {
+        display: flex;
+
+        img {
+          width: 7.375rem;
+          height: 7.375rem;
+        }
+      }
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        gap: 30px;
+
+        h6 {
+
+          font-size: large;
+          font-weight: bold;
+
+        }
+
+      }
+    }
+  }
+
+
+  // FOOTER
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    .resenia{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 5rem;
+        height: 6rem;
+      }
+    }
+
+
   }
 }
