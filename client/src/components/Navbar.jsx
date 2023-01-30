@@ -1,20 +1,49 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import logo from "../img/logo.jpg"
 
 function Navbar() {
   return (
     <div className="barraNavegacion">
-      <div className="logo">
-        <Link to="/">
-  <img src="..." alt="Error al cargar el logotipo"/>
-        </Link>
+      <div className="subidaBarraNavegacion">
+        <ul>
+          <li>
+            Política de privacidad
+          </li>
+          <li>
+            Política de cookies
+          </li>
+          <li>
+            Síguenos en nuestras redes sociales
+          </li>
+        </ul>
       </div>
-      <div className="links">
-        <h6>Inicio</h6>
-        <h6>Productos</h6>
-        <h6>Blog</h6>
-        <h6>Sobre nosotros</h6>
-        <h6>Contáctanos</h6>
+      <div className="bajadaBarraNavegacion">
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="Error al cargar el logotipo" />
+          </Link>
+        </div>
+        <div className="links">
+          <Link to="/">
+            <h6>Inicio</h6>
+          </Link>
+          <Link to="/productos">
+            <h6>Productos</h6>
+          </Link>
+          <Link to="/blog">
+            <h6>Blog</h6>
+          </Link>
+          <Link to="/nosotros">
+            <h6>Sobre nosotros</h6>
+          </Link>
+          <Link to="/contactanos">
+            <h6>Contáctanos</h6>
+          </Link>
+          <Link to="/ingreso">
+            <h6>Ingresa</h6>
+          </Link>
+        </div>
       </div>
     </div>
   )

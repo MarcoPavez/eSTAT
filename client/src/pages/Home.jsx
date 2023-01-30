@@ -1,8 +1,10 @@
 import React from "react";
 
+
+
 const Home = () => {
   return (
-    <div className="home">
+    <div className="inicio">
       <div className="presentacion">
         <h1>eSTAT</h1>
         <h2>La mano amiga en tu proceso de investigación</h2>
