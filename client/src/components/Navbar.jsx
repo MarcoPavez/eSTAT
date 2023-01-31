@@ -14,6 +14,9 @@ function Navbar() {
             Política de cookies
           </li>
           <li>
+            Política de devolución
+          </li>
+          <li>
             Síguenos en nuestras redes sociales
           </li>
         </ul>
@@ -28,8 +31,8 @@ function Navbar() {
           <Link to="/">
             <h6>Inicio</h6>
           </Link>
-          <Link to="/productos">
-            <h6>Productos</h6>
+          <Link to="/servicios">
+            <h6>Servicios</h6>
           </Link>
           <Link to="/blog">
             <h6>Blog</h6>
