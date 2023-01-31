@@ -1,22 +1,25 @@
 import React from 'react'
 import logo from "../img/logo.jpg"
-
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
 
-    <div class="col" className="footer">
+    <div className="footer">
 
-      <div class="col" className="resenia">
+      <div className="resenia">
 
-        <img src={logo} alt="Error al cargar el logotipo" />
-        <h6>eSTAT es una marca registrada bajo la legislatura del gobierno de Chile</h6>
+        <Link to="/">
+          <img src={logo} alt="Error al cargar el logotipo" />
+        </Link>
+        <h6>eSTAT es una marca registrada<br />bajo la legislatura del gobierno de Chile</h6>
 
       </div>
 
-      <div class="col" className="productosFooter">
+      <div className="productosFooter">
 
         <ul>
+          <h5>Servicios disponibles</h5>
           <li>Análisis de datos</li>
           <li>Gestión de datos</li>
           <li>Minería de datos</li>
@@ -24,11 +27,12 @@ function Footer() {
 
       </div>
 
-      <div class="col" className="Contacto">
+      <div className="contacto">
 
         <ul>
-        <li>Redes sociales</li>
-        <li>Correo electrónico</li>
+          <h5>Contacto</h5>
+          <li>Redes sociales</li>
+          <li>Correo electrónico</li>
         </ul>
 
       </div>
