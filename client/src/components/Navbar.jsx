@@ -22,6 +22,8 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <div className="container">
+
       <div className="bajadaBarraNavegacion">
         <div className="logo">
           <Link to="/">
@@ -48,6 +50,7 @@ function Navbar() {
             <h6>Ingresa</h6>
           </Link>
         </div>
+      </div>
       </div>
     </div>
   )
