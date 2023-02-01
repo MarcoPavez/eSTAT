@@ -2,12 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex-grow: 1;
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+
 
   //HOME
 
@@ -17,6 +13,11 @@
     gap: 150px;
     color: black;
 
+    figcaption{
+      font-size: 0.7rem;
+      font-weight: 100;
+      font-style: italic;
+    }
 
     .presentacion {
       display: flex;
@@ -24,10 +25,12 @@
       text-align: center;
       gap: 20px;
 
-      h1, h2 {
+
+      h1,
+      h2 {
         font-size: 70px;
         font-weight: 800;
-        background-image: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+        background-image: linear-gradient(to bottom left, #214a70, #80c0fb);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
@@ -36,11 +39,57 @@
       }
     }
 
+    
+
     .explicacionServicios {
       display: flex;
-      flex-direction: column;
-      gap: 40px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 100px;
       text-align: center;
+
+      .imagenPieExplicacion{
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 30rem;
+          height: 30rem;
+        }
+        figcaption{
+          margin-top: -2.8rem;
+        }
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 40px;
+      }
+    }
+
+    .primeraCaracteristicaServicios {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .imagenPiePrimeraCaracteristica {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 20srem;
+          height: 20rem;
+        }
+        figcaption{
+          margin-top: -2.8rem;
+        }
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 40px;
+      }
     }
 
     .serviciosOfertados {
@@ -64,11 +113,17 @@
 
     display: flex;
     flex-direction: column;
+    background-color: rgb(33, 74, 112);
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
     .subidaBarraNavegacion {
       display: flex;
       align-items: center;
-      justify-content: right;
+      justify-content: center;
       background-color: white;
       font-size: smaller;
 
@@ -86,7 +141,9 @@
     .bajadaBarraNavegacion {
       display: flex;
       flex-direction: row;
-      background-color: rgb(33, 74, 112);
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+
 
       .logo {
         display: flex;
@@ -196,58 +253,65 @@
   .servicios {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
 
-    .introServicios {
+
+    .container {
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 1.8rem;
 
-      h2 {
-        font-weight: bold;
-        font-size: xx-large;
-        text-align: center;
-      }
 
-      h3 {
-        font-weight: bold;
-        font-size: medium;
-        text-align: center;
-      }
-    }
-
-    .categoriaServicios {
-      display: flex;
-      flex-direction: column;
-      gap: 3.1rem;
-      height: 31.25rem;
-
-      h4 {
+      .introServicios {
         display: flex;
-        justify-content: center;
-        border-right-style: solid;
-        border-right-width: 1px;
-        align-items: center;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        h2 {
+          font-weight: 800;
+          font-size: xx-large;
+          text-align: center;
+        }
+
+        h3 {
+          font-weight: lighter;
+          font-size: large;
+          text-align: center;
+        }
       }
 
-      h5 {
+      .categoriaServicios {
         display: flex;
-        align-items: center;
-      }
-
-      .analisisDatos {
-        display: flex;
+        flex-direction: column;
         gap: 3.1rem;
-      }
+        height: 31.25rem;
 
-      .gestionDatos {
-        display: flex;
-        gap: 3.1rem;
-      }
+        h4 {
+          display: flex;
+          justify-content: center;
+          border-right-style: solid;
+          border-right-width: 1px;
+          align-items: center;
+        }
 
-      .recoleccionDatos {
-        display: flex;
-        gap: 3.1rem;
+        h5 {
+          display: flex;
+          align-items: center;
+        }
+
+        .analisisDatos {
+          display: flex;
+          gap: 3.1rem;
+        }
+
+        .gestionDatos {
+          display: flex;
+          gap: 3.1rem;
+        }
+
+        .recoleccionDatos {
+          display: flex;
+          gap: 3.1rem;
+        }
       }
     }
   }
