@@ -5,9 +5,12 @@ import React from "react";
 const Home = () => {
   return (
     <div className="inicio">
-      <div className="presentacion">
-        <h1>eSTAT</h1>
-        <h2>La mano amiga en tu proceso de investigación</h2>
+      <div className="container">
+
+        <div className="presentacion">
+          <h1><sup>e</sup>STAT</h1>
+          <h2>La mano amiga en tu proceso de investigación</h2>
+        </div>
       </div>
       <div className="explicacionServicios">
         <h2>¡Estudiante! </h2>
@@ -21,6 +24,12 @@ const Home = () => {
       </div>
       <div className="serviciosOfertados">
         <h3>Nuestros servicios son: </h3>
+
+
+
+
+
+
         <div className="listaServiciosOfertados">
           <ul>
             <li>
