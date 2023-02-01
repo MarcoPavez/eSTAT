@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
 
-    <div className="footer">
+    <div class="fixed-bottom" className="footer">
 
       <div className="resenia">
 

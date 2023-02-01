@@ -4,7 +4,8 @@ import logo from "../img/logo.jpg"
 
 function Navbar() {
   return (
-    <div className="barraNavegacion">
+    
+    <div  className="barraNavegacion">
       <div className="subidaBarraNavegacion">
         <ul>
           <li>
