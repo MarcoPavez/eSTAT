@@ -9,7 +9,7 @@ const Services = () => {
 
         <div className="introServicios">
           <h2>Servicios disponibles</h2>
-          <h3>Todo servicio solicitado implicará, idealmente, reuniones a convenir según tu disponibilidad.<br/>Asegúrate de detallar tus requerimientos y comprometerte con el proceso. </h3>
+          <h3>Todo servicio solicitado implicará, idealmente, reuniones a convenir según tu disponibilidad.<br/>Asegúrate de detallar tus requerimientos a fondo y comprometerte con el proceso. </h3>
         </div>
         <div className="categoriaServicios">
           <div className="analisisDatos" class="row h-25">
