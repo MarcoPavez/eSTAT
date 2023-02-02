@@ -10,10 +10,10 @@
   .inicio {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
     color: black;
 
-    figcaption{
+    figcaption {
       font-size: 0.7rem;
       font-weight: 100;
       font-style: italic;
@@ -28,7 +28,7 @@
 
       h1,
       h2 {
-        font-size: 70px;
+        font-size: 80px;
         font-weight: 800;
         background-image: linear-gradient(to bottom left, #214a70, #80c0fb);
         color: transparent;
@@ -36,74 +36,139 @@
         -webkit-background-clip: text;
         padding-bottom: 6px;
         margin-top: 30px;
+        text-align: left;
       }
     }
 
-    
-
-    .explicacionServicios {
+    .container {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
+      flex-direction: column;
       gap: 100px;
-      text-align: center;
 
-      .imagenPieExplicacion{
+      .explicacionServicios {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        text-align: right;
 
-        img {
-          width: 30rem;
-          height: 30rem;
+        .imagenPieExplicacion {
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 30rem;
+            height: 30rem;
+          }
+
+          figcaption {
+            margin-top: -2.6rem;
+          }
         }
-        figcaption{
-          margin-top: -2.8rem;
+
+        h2 {
+          font-weight: 800;
+          font-size: 70px;
+          color: rgb(28, 92, 107)
         }
       }
 
-      h2 {
-        font-weight: 600;
-        font-size: 40px;
+      .primeraCaracteristicaServicios {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+
+        .imagenPiePrimeraCaracteristica {
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 30rem;
+            height: 30rem;
+            
+          }
+
+          /* filter: blur(8px);
+            -webkit-filter: blur(8px); */
+
+        }
+
+        h2 {
+          font-weight: 800;
+          font-size: 70px;
+          color: rgb(28, 92, 107)
+        }
       }
     }
 
-    .primeraCaracteristicaServicios {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
+    .segundaCaracteristicaServicios {
 
-      .imagenPiePrimeraCaracteristica {
-        display: flex;
-        flex-direction: column;
 
-        img {
-          width: 20srem;
-          height: 20rem;
-        }
-        figcaption{
-          margin-top: -2.8rem;
-        }
+      /* #spin::after {
+        content: "";
+        animation: spin 4s linear infinite;
       }
 
+      @keyframes spin {
+        0% {
+          content: "Accesible";
+          color: rgb(9, 78, 167);
+        }
+
+        35% {
+          content: "Cómodo";
+          color: rgb(0, 165, 124)
+        }
+
+        70% {
+          content: "Sencillo";
+          color: rgb(188, 0, 66)
+        }
+
+        100% {
+          content: "Accesible";
+          color: rgb(9, 78, 167);
+        }
+
+
+      } */
+
       h2 {
-        font-weight: 500;
-        font-size: 40px;
+        font-size: 70px;
+        font-weight: 700;
+        text-align: center;
       }
     }
 
     .serviciosOfertados {
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
-      gap: 30px;
+      text-align: center;
+      gap: 50px;
+
+      h3{
+        font-size: 70px;
+        font-weight: 800;
+      }
 
       .listaServiciosOfertados {
-        ul {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          list-style: none;
-        }
+        display: inline-flex;
+        flex-direction: row;
+        width: auto;
+        
+       
+        .analisisDatos,.limpiezaDatos,.recoleccionDatos{
+
+            
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            padding: 40px;
+            border-radius: 15px;
+          
+       }
       }
     }
   }
