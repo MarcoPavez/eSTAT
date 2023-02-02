@@ -49,15 +49,19 @@ const Home = () => {
             <div className="analisisDatos">
 
               <h4>Análisis de datos </h4>
-              <h5>¿Buscar determinar cómo afectan las variables determinadas en tu objeto de estudio?</h5>
-              <a href="/servicios/:id">Pulsa aqui</a>
+              <h5>¿Quieres saber cómo afectan las variables a tu objeto de estudio?</h5>
+              <button type="button" class="btn btn-primary" id="boton">
+                <a class="linkSingleService" href="/servicios/analisis">Pulsa aqui</a>
+              </button>
             </div>
 
             <div className="limpiezaDatos">
 
               <h4>Limpieza de datos </h4>
               <h5>¿Tu set de datos no cuenta con la información suficiente?</h5>
-              <a href="/servicios/:id">Pulsa aquí</a>
+              <button type="button" class="btn btn-primary" id="boton">
+                <a class="linkSingleService" href="/servicios/limpieza">Pulsa aquí</a>
+              </button>
 
 
             </div>
@@ -65,9 +69,13 @@ const Home = () => {
             <div className="recoleccionDatos">
 
               <h4>Recolección de datos</h4>
-              <h5>¿No cuentas con los datos suficientes para tu investigación?</h5>
-              <a href="/servicios/:id">Pulsa aquí</a>
+              <h5>¿No cuentas con un set de datos para tu investigación?</h5>
+              
+              <button type="button" class="btn btn-primary" id="boton">
+                
+                <a class="linkSingleService" href="/servicios/recoleccion">Pulsa aquí</a>
 
+              </button>
             </div>
 
           </div>

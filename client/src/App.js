@@ -5,7 +5,9 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 
 import Services from "./pages/Services";
-import SingleService from "./pages/SingleService"
+import AnalisisDatos from "./pages/AnalisisDatos"
+import LimpiezaDatos from "./pages/LimpiezaDatos"
+import RecoleccionDatos from "./pages/RecoleccionDatos"
 
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
@@ -36,8 +38,16 @@ const router = createBrowserRouter([
         element: <Services />
       },
       {
-        path: "/servicios/:id",
-        element: <SingleService />
+        path: "/servicios/analisis",
+        element: <AnalisisDatos />
+      },
+      {
+        path: "/servicios/limpieza",
+        element: <LimpiezaDatos />
+      },
+      {
+        path: "/servicios/recoleccion",
+        element: <RecoleccionDatos />
       }
     ]
   },

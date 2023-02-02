@@ -1,7 +1,7 @@
 .aplicacion {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0.5rem;
 
 
 
@@ -10,7 +10,7 @@
   .inicio {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 5rem;
     color: black;
 
     figcaption {
@@ -23,19 +23,19 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      gap: 20px;
+      gap: 1rem;
 
 
       h1,
       h2 {
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 800;
         background-image: linear-gradient(to bottom left, #214a70, #80c0fb);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
-        padding-bottom: 6px;
-        margin-top: 30px;
+        padding-bottom: 0.3rem;
+        margin-top: 1.9rem;
         text-align: left;
       }
     }
@@ -43,7 +43,7 @@
     .container {
       display: flex;
       flex-direction: column;
-      gap: 100px;
+      gap: 5rem;
 
       .explicacionServicios {
         display: flex;
@@ -57,8 +57,8 @@
           flex-direction: column;
 
           img {
-            width: 30rem;
-            height: 30rem;
+            width: 28rem;
+            height: 28rem;
           }
 
           figcaption {
@@ -68,7 +68,7 @@
 
         h2 {
           font-weight: 800;
-          font-size: 70px;
+          font-size: 4.2rem;
           color: rgb(28, 92, 107)
         }
       }
@@ -87,7 +87,7 @@
           img {
             width: 30rem;
             height: 30rem;
-            
+
           }
 
           /* filter: blur(8px);
@@ -97,16 +97,16 @@
 
         h2 {
           font-weight: 800;
-          font-size: 70px;
+          font-size: 4.2rem;
           color: rgb(28, 92, 107)
         }
       }
     }
 
-    .segundaCaracteristicaServicios {
+    /* .segundaCaracteristicaServicios {
 
 
-      /* #spin::after {
+      #spin::after {
         content: "";
         animation: spin 4s linear infinite;
       }
@@ -133,42 +133,83 @@
         }
 
 
-      } */
+      } 
 
       h2 {
-        font-size: 70px;
+        font-size: 4.2rem;
         font-weight: 700;
         text-align: center;
       }
-    }
+    } */
 
-    .serviciosOfertados {
-      display: inline-flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 50px;
+    .container {
+      display: flex;
 
-      h3{
-        font-size: 70px;
-        font-weight: 800;
-      }
 
-      .listaServiciosOfertados {
+      .serviciosOfertados {
         display: inline-flex;
-        flex-direction: row;
-        width: auto;
-        
-       
-        .analisisDatos,.limpiezaDatos,.recoleccionDatos{
+        flex-direction: column;
+        text-align: center;
+        gap: 3.1rem;
+        margin-top: -2rem;
 
-            
+        h3 {
+          font-size: 4.2rem;
+          font-weight: 800;
+        }
+
+        .listaServiciosOfertados {
+          display: inline-flex;
+          flex-direction: row;
+          width: auto;
+          gap: 1.9rem;
+          margin-bottom: 3rem;
+
+
+          .analisisDatos,
+          .limpiezaDatos,
+          .recoleccionDatos {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 30rem;
+            height: 15.5rem;
             border-style: solid;
             border-width: 1px;
             border-color: lightgray;
-            padding: 40px;
+            padding: 2.4rem;
             border-radius: 15px;
-          
-       }
+            gap: 1.3rem;
+
+            h4 {
+              font-size: 2.0rem;
+              font-weight: 600;
+            }
+
+            h5 {
+              display: flex;
+              font-size: 1.2rem;
+              font-weight: 500;
+              
+            align-items: center;
+            }
+
+            #boton {
+              display: flex;
+              position: absolute;
+              bottom: 1.3rem;
+              left: 8.8rem;
+              justify-content: center;
+              align-items: center;
+              .linkSingleService {
+                text-decoration: none;
+                color: white
+              }
+
+            }
+
+          }
+        }
       }
     }
   }
@@ -179,6 +220,9 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(33, 74, 112);
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+  
 
     a {
       text-decoration: none;
@@ -191,11 +235,13 @@
       justify-content: center;
       background-color: white;
       font-size: smaller;
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
 
       ul {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 1.8rem;
         list-style: none;
         margin-bottom: 1px;
       }
@@ -245,9 +291,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-top-width: 1px;
-    border-top-style: solid;
+    
     background-color: rgb(228, 228, 228);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     .resenia {
       display: block;
@@ -288,9 +335,6 @@
         font-weight: bold;
 
       }
-
-
-
     }
 
     .contacto {
@@ -323,23 +367,24 @@
     .container {
       display: flex;
       flex-direction: column;
-      gap: 1.8rem;
+      gap: 2.5rem;
 
 
       .introServicios {
         display: flex;
         flex-direction: column;
-        gap: 0.8rem;
+        gap: 2.5rem;
+        margin-top: 1rem;
 
         h2 {
           font-weight: 800;
-          font-size: xx-large;
+          font-size: 4.2rem;
           text-align: center;
         }
 
         h3 {
           font-weight: lighter;
-          font-size: large;
+          font-size: 1.5rem;
           text-align: center;
         }
       }
@@ -352,10 +397,10 @@
 
         h4 {
           display: flex;
-          justify-content: center;
           border-right-style: solid;
           border-right-width: 1px;
           align-items: center;
+          text-align: center;
         }
 
         h5 {
