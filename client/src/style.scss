@@ -3,10 +3,6 @@
   flex-direction: column;
   gap: 0.5rem;
 
-
-
-
-  
   //HOME
 
   .inicio {
@@ -27,7 +23,6 @@
       text-align: center;
       gap: 1rem;
 
-
       h1,
       h2 {
         font-size: 5rem;
@@ -40,6 +35,7 @@
         margin-top: 1.9rem;
         text-align: left;
       }
+
     }
 
     .container {
@@ -71,7 +67,7 @@
         h2 {
           font-weight: 800;
           font-size: 4.2rem;
-          color: rgb(28, 92, 107)
+          color: rgb(28, 92, 107);
         }
       }
 
@@ -89,18 +85,16 @@
           img {
             width: 30rem;
             height: 30rem;
-
           }
 
           /* filter: blur(8px);
             -webkit-filter: blur(8px); */
-
         }
 
         h2 {
           font-weight: 800;
           font-size: 4.2rem;
-          color: rgb(28, 92, 107)
+          color: rgb(28, 92, 107);
         }
       }
     }
@@ -147,7 +141,6 @@
     .container {
       display: flex;
 
-
       .serviciosOfertados {
         display: inline-flex;
         flex-direction: column;
@@ -167,7 +160,6 @@
           gap: 1.9rem;
           margin-bottom: 3rem;
 
-
           .analisisDatos,
           .limpiezaDatos,
           .recoleccionDatos {
@@ -184,7 +176,7 @@
             gap: 1.3rem;
 
             h4 {
-              font-size: 2.0rem;
+              font-size: 2rem;
               font-weight: 600;
             }
 
@@ -192,8 +184,8 @@
               display: flex;
               font-size: 1.2rem;
               font-weight: 500;
-              
-            align-items: center;
+
+              align-items: center;
             }
 
             #boton {
@@ -205,11 +197,9 @@
               align-items: center;
               .linkSingleService {
                 text-decoration: none;
-                color: white
+                color: white;
               }
-
             }
-
           }
         }
       }
@@ -218,13 +208,11 @@
 
   //NAVBAR
   .barraNavegacion {
-
     display: flex;
     flex-direction: column;
     background-color: rgb(33, 74, 112);
     border-bottom-style: solid;
     border-bottom-width: 3px;
-  
 
     a {
       text-decoration: none;
@@ -247,16 +235,13 @@
         list-style: none;
         margin-bottom: 1px;
       }
-
     }
-
 
     .bajadaBarraNavegacion {
       display: flex;
       flex-direction: row;
       padding-top: 0.8rem;
       padding-bottom: 0.8rem;
-
 
       .logo {
         display: flex;
@@ -276,16 +261,12 @@
         gap: 2rem;
 
         h6 {
-
           font-size: large;
           font-weight: bold;
-
         }
-
       }
     }
   }
-
 
   // FOOTER
 
@@ -293,7 +274,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
     background-color: rgb(228, 228, 228);
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -315,7 +296,6 @@
         text-align: center;
         font-size: small;
       }
-
     }
 
     .productosFooter {
@@ -330,12 +310,10 @@
         li {
           margin-top: 0.8rem;
         }
-
       }
 
       h5 {
         font-weight: bold;
-
       }
     }
 
@@ -365,12 +343,10 @@
     display: flex;
     flex-direction: column;
 
-
     .container {
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
-
 
       .introServicios {
         display: flex;
@@ -428,5 +404,30 @@
     }
   }
 
+  //ANALISISDATOS
 
+  .container {
+    .analisisDatos {
+      display: flex;
+      flex-direction: column;
+    }
+    .inicioEjemplo {
+      .qqplotAnalisisDatos {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 60rem;
+          height: 40rem;
+        }
+      }
+    }
+    .geombarAnalisisDatos{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 65rem;
+        height: 45rem;
+      }
+    }
+  }
 }

@@ -8,9 +8,11 @@ function Navbar() {
     <div  className="barraNavegacion">
       <div className="subidaBarraNavegacion">
         <ul>
+          <Link to="/privacidad">
           <li>
             Política de privacidad
           </li>
+          </Link>
           <li>
             Política de cookies
           </li>
