@@ -35,8 +35,10 @@ function Footer() {
           <li>Correo electrónico</li>
         </ul>
 
+        <figcaption><h6><a href="https://storyset.com/work">Work illustrations by Storyset</a></h6></figcaption>
+
       </div>
-    
+
 
     </div>
 
