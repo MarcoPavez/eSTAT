@@ -34,7 +34,7 @@ function AnalisisDatos() {
           asimétrica que puede alcanzar valores muy elevados con respecto a su
           media. Para obtener un análisis más detallado, analizamos la variable
           "estrato de productor" para determinar la distribución del presupuesto
-          agrícola entre los distintos grupos de productores. {" "} 
+          agrícola entre los distintos grupos de productores. {" "}
         </p>
       </div>
 
@@ -44,12 +44,12 @@ function AnalisisDatos() {
       <div className="interpretacionGeombar">
         <p>Del gráfico se desprende que los estratos con mayor financiamiento
           monetario por la ley N° 18.450 son los Empresarios Medianos y las
-          Organizaciones de Pequeños Usuarios. Podemos interpretar de esta 
+          Organizaciones de Pequeños Usuarios. Podemos interpretar de esta
           información que la ley promueve, por un lado, la asociatividad entre
           los productores, apostando por la organización de los mismos y por su
           capacidad para presentar proyectos de acceso al agua más competentes, rentables
-          y amplios, que vayan en sintonía con los propósitos de la normativa. 
-          Por otro lado, la ley busca subvencionar el acceso al agua de los Empresarios 
+          y amplios, que vayan en sintonía con los propósitos de la normativa.
+          Por otro lado, la ley busca subvencionar el acceso al agua de los Empresarios
           Medianos, a fin de que sus gastos se enfoquen netamente en la producción
           agrícola como también en la mano de obra.
         </p>

@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import Home from "./pages/Home"
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import Inicio from "./pages/Inicio"
+import Registro from "./pages/Registro";
+import Ingreso from "./pages/Ingreso";
 
-import Services from "./pages/Services";
+import Servicios from "./pages/Servicios";
 import AnalisisDatos from "./pages/AnalisisDatos"
 import LimpiezaDatos from "./pages/LimpiezaDatos"
 import RecoleccionDatos from "./pages/RecoleccionDatos"
@@ -12,7 +12,7 @@ import RecoleccionDatos from "./pages/RecoleccionDatos"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
-import "./style.scss"
+import "./styles.scss"
 
 const Layout = () => {
   return (
@@ -31,11 +31,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Inicio />
       },
       {
         path: "/servicios",
-        element: <Services />
+        element: <Servicios />
       },
       {
         path: "/servicios/analisis",
@@ -53,11 +53,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/registro",
-    element: <Register />,
+    element: <Registro />,
   },
   {
     path: "/ingreso",
-    element: <Login />,
+    element: <Ingreso />,
   }
   
 ]);
@@ -68,7 +68,6 @@ function App() {
      
         <RouterProvider router={router} />
  
-      
     </div>
   );
 }

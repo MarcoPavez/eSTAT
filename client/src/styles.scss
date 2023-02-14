@@ -3,208 +3,144 @@
   flex-direction: column;
   gap: 0.5rem;
 
+  figcaption {
+    margin-left: 2rem;
+    font-style: italic;
+    margin-top: 2rem;
+
+    h6 {
+      font-size: 0.8rem;
+      font-weight: 100;
+    }
+
+  }
+
   //HOME
 
   .inicio {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     color: black;
-
-    figcaption {
-      font-size: 0.7rem;
-      font-weight: 100;
-      font-style: italic;
-    }
 
     .presentacion {
       display: flex;
       flex-direction: column;
       text-align: center;
-      gap: 1rem;
 
-      h1,
-      h2 {
-        font-size: 5rem;
+      h1 {
+        font-size: 4rem;
         font-weight: 800;
-        background-image: linear-gradient(to bottom left, #214a70, #80c0fb);
+        background-image: linear-gradient(to bottom left, #207487, #214a70);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
         padding-bottom: 0.3rem;
-        margin-top: 1.9rem;
-        text-align: left;
+        margin-top: 2rem;
+        text-align: center;
       }
 
     }
 
-    .container {
+    h2 {
+      font-weight: 800;
+      font-size: 3rem;
+      color: rgb(32, 116, 135);
+    }
+
+    img {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    .imagenPieExplicacion {
       display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: left;
+      margin-bottom: 2rem;
+
+    }
+
+
+    .serviciosOfertados {
+      display: inline-flex;
       flex-direction: column;
-      gap: 5rem;
+      text-align: center;
+      gap: 1rem;
 
-      .explicacionServicios {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        text-align: right;
-
-        .imagenPieExplicacion {
-          display: flex;
-          flex-direction: column;
-
-          img {
-            width: 28rem;
-            height: 28rem;
-          }
-
-          figcaption {
-            margin-top: -2.6rem;
-          }
-        }
-
-        h2 {
-          font-weight: 800;
-          font-size: 4.2rem;
-          color: rgb(28, 92, 107);
-        }
+      h3 {
+        font-size: 3rem;
+        font-weight: 800;
       }
 
-      .primeraCaracteristicaServicios {
+      .listaServiciosOfertados {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        justify-content: center;
 
-        .imagenPiePrimeraCaracteristica {
+        .analisisDatos,
+        .limpiezaDatos,
+        .recoleccionDatos {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          width: 24rem;
+          height: 12rem;
+          border-style: solid;
+          border-width: 1px;
+          border-color: lightgray;
+          padding: 2rem;
+          border-radius: 15px;
 
-          img {
-            width: 30rem;
-            height: 30rem;
+          h4 {
+            font-size: 1.8rem;
+            font-weight: 800;
+
           }
 
-          /* filter: blur(8px);
-            -webkit-filter: blur(8px); */
-        }
+          a {
+            text-decoration: none;
+            color: rgb(32, 116, 135);
 
-        h2 {
-          font-weight: 800;
-          font-size: 4.2rem;
-          color: rgb(28, 92, 107);
+
+            .descripcion {
+              display: flex;
+              margin-top: 2rem;
+
+              h5 {
+                font-size: 1.3rem;
+                font-weight: 600;
+                align-items: center;
+                color: black;
+              }
+
+            }
+          }
+
+          
+
+
         }
       }
     }
 
-    /* .segundaCaracteristicaServicios {
-
-
-      #spin::after {
-        content: "";
-        animation: spin 4s linear infinite;
-      }
-
-      @keyframes spin {
-        0% {
-          content: "Accesible";
-          color: rgb(9, 78, 167);
-        }
-
-        35% {
-          content: "Cómodo";
-          color: rgb(0, 165, 124)
-        }
-
-        70% {
-          content: "Sencillo";
-          color: rgb(188, 0, 66)
-        }
-
-        100% {
-          content: "Accesible";
-          color: rgb(9, 78, 167);
-        }
-
-
-      } 
-
-      h2 {
-        font-size: 4.2rem;
-        font-weight: 700;
-        text-align: center;
-      }
-    } */
-
-    .container {
+    .imagenPiePrimeraCaracteristica {
       display: flex;
-
-      .serviciosOfertados {
-        display: inline-flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 3.1rem;
-        margin-top: -2rem;
-
-        h3 {
-          font-size: 4.2rem;
-          font-weight: 800;
-        }
-
-        .listaServiciosOfertados {
-          display: inline-flex;
-          flex-direction: row;
-          width: auto;
-          gap: 1.9rem;
-          margin-bottom: 3rem;
-
-          .analisisDatos,
-          .limpiezaDatos,
-          .recoleccionDatos {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 30rem;
-            height: 15.5rem;
-            border-style: solid;
-            border-width: 1px;
-            border-color: lightgray;
-            padding: 2.4rem;
-            border-radius: 15px;
-            gap: 1.3rem;
-
-            h4 {
-              font-size: 2rem;
-              font-weight: 600;
-            }
-
-            h5 {
-              display: flex;
-              font-size: 1.2rem;
-              font-weight: 500;
-
-              align-items: center;
-            }
-
-            #boton {
-              display: flex;
-              position: absolute;
-              bottom: 1.3rem;
-              left: 8.8rem;
-              justify-content: center;
-              align-items: center;
-              .linkSingleService {
-                text-decoration: none;
-                color: white;
-              }
-            }
-          }
-        }
-      }
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: left;
+      margin-bottom: 5rem;
     }
   }
+
+
+
+
+
 
   //NAVBAR
   .barraNavegacion {
@@ -240,8 +176,6 @@
     .bajadaBarraNavegacion {
       display: flex;
       flex-direction: row;
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem;
 
       .logo {
         display: flex;
@@ -411,20 +345,24 @@
       display: flex;
       flex-direction: column;
     }
+
     .inicioEjemplo {
       .qqplotAnalisisDatos {
         display: flex;
         justify-content: center;
+
         img {
           width: 60rem;
           height: 40rem;
         }
       }
     }
-    .geombarAnalisisDatos{
+
+    .geombarAnalisisDatos {
       display: flex;
       justify-content: center;
-      img{
+
+      img {
         width: 65rem;
         height: 45rem;
       }
