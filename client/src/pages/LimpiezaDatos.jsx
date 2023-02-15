@@ -2,7 +2,11 @@ import React from 'react'
 
 function LimpiezaDatos() {
   return (
-    <div>LimpiezaDatos</div>
+    <div class="container">
+      <div className="limpiezaDatos">
+        
+      </div>
+    </div>
   )
 }
 

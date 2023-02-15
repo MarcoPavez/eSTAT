@@ -1,5 +1,4 @@
 import React from "react";
-import ilustracionProveemos from "../img/ilustracion1.jpg"
 import estadistica from "../img/estadistica.jpg"
 import tiempo from "../img/tiempo.png"
 
