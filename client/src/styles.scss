@@ -119,11 +119,12 @@
 
             }
           }
-
-
-
-
         }
+      }
+
+      .imagenPiePrimeraCaracteristica {
+        display: flex;
+        flex-direction: row-reverse;
       }
     }
 
@@ -417,7 +418,7 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 15px;
-    margin:30%;
+    margin: 30%;
     padding: 5rem;
     margin-top: 10rem;
 
@@ -426,7 +427,7 @@
       height: 8rem;
     }
 
-    h1{
+    h1 {
       font-size: 4rem;
       font-weight: 700;
     }
@@ -437,21 +438,17 @@
       gap: 20px;
       align-items: center;
 
-      input{
+      input {
         width: 15rem;
         border-radius: 0.1rem;
-        border-style:double;
+        border-style: double;
       }
 
-      button{
-      
+      button {
+
         width: 5rem;
-        
+
       }
-
     }
-
-
-
   }
 }
