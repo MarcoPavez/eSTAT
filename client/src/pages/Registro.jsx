@@ -1,8 +1,34 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React, { useState } from 'react'
+import { Link, useNavigate } from "react-router-dom"
 import logo from "../img/logo.jpg"
+import axios from "axios"
 
 const Register = () => {
+
+  const [datosUsuario, setDatosUsuario] = useState({
+    nombre: "",
+    email: "",
+    contrasenia: ""
+  });
+
+  const [err, setErr] = useState(null);
+
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setDatosUsuario((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+  };
+ 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post("/autorizacion/registro", datosUsuario)
+      navigate("/ingreso")
+    } catch (err) {
+      setErr(err.response.data)
+    }
+  }
+
   return (
     <div className="registro">
       <Link to="/">
@@ -16,14 +42,24 @@ const Register = () => {
           required
           type="text"
           placeholder='Nombre de usuario'
-          name="usuario" />
+          name="nombre"
+          onChange={handleChange} />
         <input
           required
           type="password"
           placeholder='Contraseña'
-          name="contraseña" />
+          name="contrasenia"
+          onChange={handleChange} />
 
-        <button>Regístrate</button>
+        <input
+          required
+          type="email"
+          placeholder='Correo electrónico'
+          name="email"
+          onChange={handleChange} />
+
+        <button onClick={handleSubmit}>Regístrate</button>
+        {err && <p>{err}</p>}
 
         <span>
           ¿Ya tienes una cuenta? <Link to="/ingreso">Ingresa</Link>
