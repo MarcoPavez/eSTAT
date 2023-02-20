@@ -15,7 +15,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post("/api/autorizacion", autorizacionRuta);
+app.use("/api/autorizacion", autorizacionRuta);
 
 app.listen(8080, () => {
     console.log("Servidor conectado")
