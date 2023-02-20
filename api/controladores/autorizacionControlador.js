@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 export const registro = (req, res) => {
     const q = "SELECT * FROM estat.usuarios WHERE email = ? or nombre = ?"
 
-    db.query(q, [req.body.email, req.body.nombre], (err, data) => {
+    bbdd.query(q, [req.body.email, req.body.nombre], (err, data) => {
 
         //Si hay un error, retorna el error 500 (el servidor encontró una condición inesperada que le impide completar la petición)
         if (err) return res.status(500).json(err)
@@ -27,7 +27,7 @@ export const registro = (req, res) => {
             hash,
         ]
 
-        db.query(q, [values], (err, data) => {
+        bbdd.query(q, [valores], (err, data) => {
             if (err) return res.status(500).json(err);
             return res.status(200).json("Usuario creado correctamente")
         })
@@ -38,7 +38,7 @@ export const ingreso = (req, res) => {
 
     const q = "SELECT * FROM estat.usuarios WHERE nombre = ?"
 
-    db.query(q, [req.body.nombre], (err, data) => {
+    bbdd.query(q, [req.body.nombre], (err, data) => {
         if (err) return res.status(500).json(err);
         if (data.length === 0) return res.status(404).json("Usuario inexistente")
 
@@ -48,6 +48,7 @@ export const ingreso = (req, res) => {
     })
 
 }
+
 
 export const salida = (req, res) => {
     res.clearCookie("access_token", {
