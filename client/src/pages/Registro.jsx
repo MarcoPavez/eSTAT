@@ -7,8 +7,8 @@ const Register = () => {
 
   const [datosUsuario, setDatosUsuario] = useState({
     nombre: "",
-    email: "",
-    contrasenia: ""
+    contrasenia: "",
+    email: ""
   });
 
   const [err, setErr] = useState(null);

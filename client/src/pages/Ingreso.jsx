@@ -1,8 +1,35 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React, { useContext, useState } from 'react'
+import { Link, useNavigate } from "react-router-dom"
 import logo from "../img/logo.jpg"
+import { AuthContext } from "../context/contextoAutorizacion"
 
 const Login = () => {
+
+  const [inputs, setInputs] = useState({
+    nombre: "",
+    contrasenia: ""
+  })
+
+  const [err, setErr] = useState(null);
+
+  const navigate = useNavigate();
+
+  const { ingreso } = useContext(AuthContext);
+
+  const handleChange = (e) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await ingreso(inputs);
+      navigate("/");
+    } catch (err) {
+      setErr(err.response.data);
+    }
+  };
+
   return (
     <div className="autorizacion">
       <Link to="/">
@@ -14,14 +41,17 @@ const Login = () => {
           required
           type="text"
           placeholder="Nombre de usuario"
-          name="usuario" />
+          name="usuario"
+          onChange={handleChange}></input>
         <input
           required
           type="password"
           placeholder='Contraseña'
-          name='contrasenia' />
+          name='contrasenia'
+          onChange={handleChange} ></input>
 
-        <button>Ingresa</button>
+        <button onClick={handleSubmit}>Ingresa</button>
+        {err && <p>{err}</p>}
         <span>
           ¿No tienes una cuenta? <Link to="/registro">Regístrate</Link>
         </span>

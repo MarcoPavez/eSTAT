@@ -6,9 +6,10 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 
-export const ContextoAutorizacion = createContext();
+export const AuthContext = createContext();
 
 export const ProveedorContextoAutorizacion = ({ children }) => {
+    
     const [usuarioActual, setUsuarioActual] = useState(
         JSON.parse(localStorage.getItem("user")) || null
     );
@@ -28,8 +29,8 @@ export const ProveedorContextoAutorizacion = ({ children }) => {
     }, [usuarioActual]);
 
     return(
-        <Proveedor.ContextoAutorizacion value = {{ usuarioActual, ingreso, salida }} >
+        <AuthContext.Provider value = {{ usuarioActual, ingreso, salida }} >
             {children}
-        </Proveedor.ContextoAutorizacion>
+        </AuthContext.Provider>
     )
 }

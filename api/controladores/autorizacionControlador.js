@@ -1,10 +1,11 @@
-import { bbdd } from "../index.js";
+import { bbdd } from "../db.js";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken"
 
 export const registro = (req, res) => {
-    const q = "SELECT * FROM estat.usuarios WHERE email = ? or nombre = ?"
+    const q = "SELECT * FROM usuarios WHERE nombre = ? or email = ?"
 
-    bbdd.query(q, [req.body.email, req.body.nombre], (err, data) => {
+    bbdd.query(q, [req.body.nombre, req.body.email], (err, data) => {
 
         //Si hay un error, retorna el error 500 (el servidor encontró una condición inesperada que le impide completar la petición)
         if (err) return res.status(500).json(err)
@@ -19,7 +20,7 @@ export const registro = (req, res) => {
 
         //Inserción de datos en BBDD
 
-        const q = "INSERT INTO estat.usuarios(`nombre`, `email`, `contrasenia`) VALUES (?)"
+        const q = "INSERT INTO usuarios(`nombre`, `email`, `contrasenia`) VALUES (?)"
 
         const valores = [
             req.body.nombre,
@@ -45,6 +46,13 @@ export const ingreso = (req, res) => {
         const correctaContrasenia = bcrypt.compareSync(req.body.contrasenia, data[0].contrasenia);
 
         if (!correctaContrasenia) return res.status(400).json("Usuario y/o contraseña incorrectos")
+
+        const token = jwt.sign({ id: data[0].id }, "jwtkey");
+        const { contrasenia, ...other } = data[0];
+
+        res.cookie("access_token", token, {
+            httpOnly: true
+        }).status(200).json(other)
     })
 
 }

@@ -31,7 +31,7 @@ const Home = () => {
 
           <div className="limpiezaDatos">
 
-            <h4><a class="linkSingleService" href="/servicios/limpieza">Limpieza de datos
+            <h4><a className="linkSingleService" href="/servicios/limpieza">Limpieza de datos
               <div className="descripcion"><h5>¿Tu set de datos no cuenta con la información suficiente?</h5></div></a></h4>
 
 
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
 
         <div className="imagenPiePrimeraCaracteristica">
-          <h2 class>Nos ajustamos<br /> a tus tiempos</h2>
+          <h2>Nos ajustamos<br /> a tus tiempos</h2>
           <img src={tiempo} alt="Error al cargar ilustración" />
         </div>
 

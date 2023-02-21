@@ -1,19 +1,11 @@
 import express from "express";
 import autorizacionRuta from "./rutas/autorizacionRuta.js"
-import mysql from "mysql";
-
-/* Conexión a BBDD */
-
-export const bbdd = mysql.createConnection({
-    host: "localhost",
-    user:"root",
-    password:"MPavez2021.,*",
-    database:"estat"
-})
+import cookieParser from "cookie-parser";
 
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/autorizacion", autorizacionRuta);
 
