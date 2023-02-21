@@ -41,7 +41,7 @@ const Login = () => {
           required
           type="text"
           placeholder="Nombre de usuario"
-          name="usuario"
+          name="nombre"
           onChange={handleChange}></input>
         <input
           required
