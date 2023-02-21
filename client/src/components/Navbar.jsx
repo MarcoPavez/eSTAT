@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom"
+import { AuthContext } from '../context/contextoAutorizacion'
 import logo from "../img/logo.jpg"
 
 function Navbar() {
+
+  const { usuarioActual, salida } = useContext(AuthContext)
+
   return (
 
     <div className="barraNavegacion">
@@ -51,9 +55,17 @@ function Navbar() {
             <Link to="/nosotros">
               <h6>Sobre nosotros</h6>
             </Link>
-            <Link to="/ingreso">
-              <h6>Ingresa</h6>
-            </Link>
+            <h6>{usuarioActual?.nombre}</h6>
+            {usuarioActual ? (
+              <Link to="/">
+                <h6 onClick={salida}>Cerrar sesión</h6>
+              </Link>
+            ) : (
+              <Link to="/ingreso">
+                <h6>Ingresa</h6>
+              </Link>
+            )}
+
           </div>
         </div>
       </div>
