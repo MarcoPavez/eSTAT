@@ -55,14 +55,16 @@ function Navbar() {
             <Link to="/nosotros">
               <h6>Sobre nosotros</h6>
             </Link>
-            <h6>{usuarioActual?.nombre}</h6>
+            <Link to="/perfil">
+              <h6>{usuarioActual?.nombre}</h6>
+            </Link>
             {usuarioActual ? (
               <Link to="/">
                 <h6 onClick={salida}>Cerrar sesión</h6>
               </Link>
             ) : (
               <Link to="/ingreso">
-                <h6>Ingresa</h6>
+                <h6 id="correccionBoton">Ingresa</h6>
               </Link>
             )}
 
