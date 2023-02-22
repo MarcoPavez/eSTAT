@@ -10,10 +10,11 @@ const Home = () => {
       <div className="presentacion">
         <h1><sup>e</sup>STAT</h1>
         <h1>Tu mano amiga<br />en la investigación</h1>
+        <p>¡Facilitamos el desarrollo de tu tesis!</p>
       </div>
 
       <div className="imagenPieExplicacion">
-        <h2>Acercamos <br />la estadística <br /> a tu tesis</h2>
+        <h2>Acercamos <br />la estadística a<br /> tus conocimientos</h2>
         <img src={estadistica} alt="Error al cargar ilustración" />
 
       </div>
