@@ -48,7 +48,7 @@ const Home = () => {
 
         <div className="contactanos">
           <Link to="requerimientos">
-            <button type="button" class="btn btn-primary btn-lg">
+            <button>
               Escribe tus requerimientos
             </button>
           </Link>
