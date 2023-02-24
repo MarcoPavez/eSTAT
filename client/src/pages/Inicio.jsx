@@ -22,13 +22,13 @@ const Home = () => {
       <div className="serviciosOfertados">
         <h3>Nuestros servicios </h3>
         <div className="listaServiciosOfertados">
-        <div className="analisisDatos">
-          <Link to="/servicios/analisis" style={{ textDecoration: 'none' }}>
-            
+          <div className="analisisDatos">
+            <Link to="/servicios/analisis" style={{ textDecoration: 'none' }}>
+
               <p>Análisis de datos</p>
               <p>¿Quieres saber cómo afectan las variables a tu objeto de estudio?</p>
-            
-          </Link>
+
+            </Link>
           </div>
 
           <Link to="/servicios/limpieza" style={{ textDecoration: 'none' }}>
@@ -44,6 +44,16 @@ const Home = () => {
               <p>¿No cuentas con un set de datos para tu investigación?</p>
             </div>
           </Link>
+        </div>
+
+        <div className="contactanos">
+          <Link to="requerimientos">
+            <button type="button" class="btn btn-primary btn-lg">
+              Escribe tus requerimientos
+            </button>
+          </Link>
+          <p>¡Te contactaremos a la brevedad!</p>
+
         </div>
 
         <div className="imagenPiePrimeraCaracteristica">
