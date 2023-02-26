@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import estadistica from "../img/estadistica.jpg"
 import tiempo from "../img/tiempo.png"
+import imagenFondo from "../img/imagenFondo.png"
 
 const Home = () => {
   return (
     <div className="inicio">
+
+      <div className="imagenFondo">
+        <img src={imagenFondo} alt="Imagen esencialmente estética, para darle un diseño más atractivo y llamativo al inicio" />
+      </div>
 
       <div className="presentacion">
         <h1><sup>e</sup>STAT</h1>
