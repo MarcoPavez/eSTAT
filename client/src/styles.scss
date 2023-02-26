@@ -22,6 +22,17 @@
     flex-direction: column;
     color: black;
 
+    .imagenFondo {
+      position: absolute;
+      z-index: -1;
+
+      img {
+        -webkit-filter: blur(6rem);
+        height: 110rem;
+        width: 115rem;
+      }
+    }
+
     .presentacion {
       display: flex;
       flex-direction: column;
@@ -45,7 +56,6 @@
         font-size: 2.5rem;
         font-weight: 700;
       }
-
     }
 
     img {
@@ -122,18 +132,18 @@
         .analisisDatos:hover,
         .limpiezaDatos:hover,
         .recoleccionDatos:hover {
-          width: 29rem;
+          width: 27rem;
           height: 12rem;
           border-width: 0.3rem;
 
           p:first-child {
-            font-size: 2.3rem;
+            font-size: 2.1rem;
             font-weight: 800;
 
           }
 
           p:last-child {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 700;
           }
         }
@@ -160,7 +170,7 @@
 
     .contactanos {
       button {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 600;
         background-color: rgb(33, 74, 112);
         border-radius: 0.5rem;
@@ -168,20 +178,20 @@
         border-color: rgb(33, 74, 112);
         color: white;
         transition: 0.5s;
-        padding: 0.5rem;
+        padding: 0.8rem;
       }
 
-      button:hover{
+      button:hover {
         opacity: 90%;
-        padding: 0.5rem;
-        font-size: 1.7rem;
+        padding: 1rem;
+        font-size: 2.2rem;
       }
 
-      p{
-        font-size: 1.1rem;
+      p {
+        font-size: 1.3rem;
         font-weight: 600;
       }
-      
+
 
     }
   }
@@ -245,7 +255,7 @@
             font-weight: 600;
             font-size: 1.2rem;
             color: white;
-            transition: 0.1s;
+            transition: 0.5s;
           }
 
           h6:hover {
@@ -269,7 +279,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     background-color: rgb(228, 228, 228);
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -297,18 +306,25 @@
       display: flex;
       flex-direction: column;
       margin-top: 1.2rem;
+      
 
       ul {
         list-style: none;
         text-align: center;
-
+        
         li {
           margin-top: 0.8rem;
+          color: black;
+          transition: 0.5s;
+        }
+        li:hover{
+          color:rgb(33, 74, 112);
+          font-size: 1.2rem;
         }
       }
 
       h5 {
-        font-weight: bold;
+        font-weight: 700;
       }
     }
 
@@ -408,13 +424,16 @@
     }
 
     .inicioEjemplo {
+
+      font-size: 1.2rem;
+
       .qqplotAnalisisDatos {
         display: flex;
         justify-content: center;
 
         img {
-          width: 60rem;
-          height: 40rem;
+          width: 55rem;
+          height: 35rem;
         }
       }
     }
@@ -424,9 +443,13 @@
       justify-content: center;
 
       img {
-        width: 65rem;
-        height: 45rem;
+        width: 55rem;
+        height: 40rem;
       }
+    }
+
+    .interpretacionGeombar{
+      font-size:1.2rem
     }
   }
 
@@ -522,6 +545,9 @@
     gap: 1rem;
 
     .inicioEjemplo {
+
+      font-size: 1.2rem;
+
       display: flex;
       flex-direction: column;
 
@@ -545,22 +571,22 @@
     }
   }
 
-  .requerimientos{
+  .requerimientos {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    .textoInicial{
+    .textoInicial {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
     }
-    
-    .editor{
+
+    .editor {
       height: 8rem;
     }
 
-    .botonRequerimientos{
+    .botonRequerimientos {
       margin-top: 3rem;
     }
   }
