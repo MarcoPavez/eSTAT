@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 function RecoleccionDatos() {
   return (
@@ -28,6 +29,12 @@ function RecoleccionDatos() {
           ), que significa frecuencia de término – frecuencia inversa de
           documento
         </p>
+      </div>
+      <div className="contactanos">
+        <Link to="requerimientos">
+          <button>Escribe tus requerimientos</button>
+        </Link>
+        <p>¡Te contactaremos a la brevedad!</p>
       </div>
     </div>
   );
