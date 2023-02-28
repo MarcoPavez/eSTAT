@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import qqplot from "../img/arrange_qqplot.png";
 import geombar from "../img/geombar_1.png";
 
@@ -54,6 +55,12 @@ function AnalisisDatos() {
           de los Empresarios Medianos, a fin de que sus gastos se enfoquen
           netamente en la producción agrícola como también en la mano de obra.
         </p>
+      </div>
+      <div className="contactanos">
+        <Link to="requerimientos">
+          <button>Escribe tus requerimientos</button>
+        </Link>
+        <p>¡Te contactaremos a la brevedad!</p>
       </div>
     </div>
   );
