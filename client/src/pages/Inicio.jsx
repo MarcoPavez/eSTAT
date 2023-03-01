@@ -46,7 +46,7 @@ const Home = () => {
           <Link to="/servicios/recoleccion" style={{ textDecoration: 'none' }}>
             <div className="recoleccionDatos">
               <p>Recolección de datos</p>
-              <p>¿No cuentas con un set de datos para tu investigación?</p>
+              <p>¿No cuentas con un set de datos<br/> para tu investigación?</p>
             </div>
           </Link>
         </div>

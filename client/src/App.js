@@ -16,6 +16,11 @@ import "./styles.scss"
 import Nosotros from "./pages/Nosotros";
 import Requerimientos from "./pages/Requerimientos";
 
+import "./fonts/gobCL_Bold.otf"
+import "./fonts/gobCL_Heavy.otf"
+import "./fonts/gobCL_Light.otf"
+import "./fonts/gobCL_Regular.otf"
+
 const Layout = () => {
   return (
     <>
