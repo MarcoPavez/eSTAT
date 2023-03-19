@@ -1,10 +1,13 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import plotIncompletitud from "../img/plotIncompletitud.jpeg";
 import plotFaltantes from "../img/plotFaltantes.jpeg";
 import plotCompletos from "../img/plotCompletos.jpeg";
 
 function LimpiezaDatos() {
+
+  const navigate = useNavigate();
+
   return (
     <div class="container">
       <div className="limpiezaDatos">
@@ -63,9 +66,10 @@ function LimpiezaDatos() {
           ></img>
         </div>
       </div>
+
       <div className="contactanos">
-        <Link to="requerimientos">
-          <button>Escribe tus requerimientos</button>
+        <Link to="/requerimientos">
+          <button onClick={() => navigate(-2)}>Escribe tus requerimientos</button>
         </Link>
         <p>¡Te contactaremos a la brevedad!</p>
       </div>

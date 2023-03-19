@@ -52,7 +52,7 @@ const Home = () => {
         </div>
 
         <div className="contactanos">
-          <Link to="requerimientos">
+          <Link to="./requerimientos">
             <button>
               Escribe tus requerimientos
             </button>

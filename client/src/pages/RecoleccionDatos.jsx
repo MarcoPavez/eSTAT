@@ -1,7 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 
 function RecoleccionDatos() {
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="recoleccionDatos">
@@ -31,8 +33,8 @@ function RecoleccionDatos() {
         </p>
       </div>
       <div className="contactanos">
-        <Link to="requerimientos">
-          <button>Escribe tus requerimientos</button>
+        <Link to="/requerimientos">
+          <button onClick={() => navigate(-2)}>Escribe tus requerimientos</button>
         </Link>
         <p>¡Te contactaremos a la brevedad!</p>
       </div>

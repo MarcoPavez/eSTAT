@@ -1,9 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 import qqplot from "../img/arrange_qqplot.png";
 import geombar from "../img/geombar_1.png";
 
 function AnalisisDatos() {
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="analisisDatos">
@@ -57,8 +59,10 @@ function AnalisisDatos() {
         </p>
       </div>
       <div className="contactanos">
-        <Link to="requerimientos">
-          <button>Escribe tus requerimientos</button>
+        <Link to="/requerimientos">
+          <button onClick={() => navigate(-2)}>
+            Escribe tus requerimientos
+          </button>
         </Link>
         <p>¡Te contactaremos a la brevedad!</p>
       </div>
