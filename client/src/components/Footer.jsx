@@ -46,6 +46,31 @@ function Footer() {
           </h6>
         </figcaption>
       </div>
+
+      <div className="subidaBarraNavegacion">
+        <ul>
+          <Link to="/privacidad">
+            <li>
+              Política de privacidad
+            </li>
+          </Link>
+          <Link to="/cookies">
+            <li>
+              Política de cookies
+            </li>
+          </Link>
+          <Link to="/devoluciones">
+            <li>
+              Política de devolución
+            </li>
+          </Link>
+
+          <li>
+            Síguenos en nuestras redes sociales
+          </li>
+
+        </ul>
+      </div >
     </div>
   );
 }
