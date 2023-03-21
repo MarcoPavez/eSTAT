@@ -13,9 +13,9 @@ const Home = () => {
       </div>
 
       <div className="presentacion">
-        <h1><sup>e</sup>STAT</h1>
+        <h2><sup>e</sup>STAT</h2>
         <h1>Tu mano amiga<br />en la investigación</h1>
-        <p>¡Facilitamos el desarrollo de tu tesis!</p>
+        <h1>¡Facilitamos el desarrollo de tu tesis!</h1>
       </div>
 
       <div className="imagenPieExplicacion">
