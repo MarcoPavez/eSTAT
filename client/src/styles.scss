@@ -23,7 +23,6 @@
   flex-direction: column;
   gap: 0.5rem;
 
-
   figcaption {
     margin-left: 2rem;
     font-style: italic;
@@ -33,94 +32,88 @@
       font-size: 0.8rem;
       font-weight: 100;
     }
-
   }
 
-    //NOSOTROS.JSX
+  //NOSOTROS.JSX
 
-    .container {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .intro,
+    .vision,
+    .mision {
       display: flex;
-      flex-direction: column;
-      gap: 8rem;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-  
-      .intro,
-      .vision,
-      .mision {
-  
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-  
-        &:nth-child(2n) {
-          flex-direction: row-reverse;
-        }
-  
-        h1 {
-          font-size: 5rem;
-          font-weight: 700;
-        }
-  
-        h2 {
-          font-size: 2.2rem;
-          font-weight: 200;
-        }
-  
-        &:nth-child(2n) {
-          text-align: right;
-        }
-  
-      }
-    }
-  
-    // INGRESO Y REGISTRO
-  
-    .autorizacion,
-    .registro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 2rem;
-      border-style: solid;
-      border-width: 1px;
-      border-radius: 15px;
-      margin: 30%;
-      padding: 5rem;
-      margin-top: 10rem;
-      font-family: "GobCL_Light";
-  
-      img {
-        width: 8rem;
-        height: 8rem;
+      align-items: center;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
       }
-  
+
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 700;
       }
-  
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-  
-        input {
-          width: 15rem;
-          border-radius: 0.1rem;
-          border-style: double;
-        }
-  
-        button {
-  
-          width: 5rem;
-  
-        }
+
+      h2 {
+        font-size: 2.2rem;
+        font-weight: 200;
+      }
+
+      &:nth-child(2n) {
+        text-align: right;
       }
     }
+  }
 
+  // INGRESO Y REGISTRO
+
+  .autorizacion,
+  .registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    margin: 30%;
+    padding: 5rem;
+    margin-top: 10rem;
+    font-family: "GobCL_Light";
+
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+      input {
+        width: 15rem;
+        border-radius: 0.1rem;
+        border-style: double;
+      }
+
+      button {
+        width: 5rem;
+      }
+    }
+  }
 
   //NAVBAR
   .barraNavegacion {
@@ -154,18 +147,20 @@
     }
 
     .container {
-
       .bajadaBarraNavegacion {
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 10px;
+        height: 0.5rem;
 
         .logo {
-
           img {
             width: 8rem;
             height: 8rem;
+            border-width: 1px;
+            border-style: solid;
+            border-color: grey;
+            border-radius: 0.2rem;
           }
         }
 
@@ -175,7 +170,6 @@
           width: 100%;
           justify-content: right;
           gap: 2rem;
-
 
           h6 {
             font-weight: 600;
@@ -188,13 +182,29 @@
             color: rgb(187, 187, 187);
           }
 
+          .dropdown {
+            position: "relative";
+            display: inline-block;
+          }
+
+          .dropdown-content{
+            display:none;
+            position:absolute;
+            z-index:1;
+
+            p{
+              color: black;
+            }
+          }
+
+          .dropdown:hover .dropdown-content{
+            display: block;
+          }
+
           #correccionBoton {
             margin-left: -2rem;
           }
         }
-
-
-
       }
     }
   }
@@ -233,19 +243,18 @@
       display: flex;
       flex-direction: column;
       margin-top: 1.2rem;
-      
 
       ul {
         list-style: none;
         text-align: center;
-        
+
         li {
           margin-top: 0.8rem;
           color: black;
           transition: 0.5s;
         }
-        li:hover{
-          color:rgb(33, 74, 112);
+        li:hover {
+          color: rgb(33, 74, 112);
           font-size: 1.2rem;
         }
       }
@@ -301,15 +310,20 @@
       gap: 0.5rem;
       font-family: "GobCL_Heavy";
 
-      h1 {
+      h1,h2 {
         font-size: 6rem;
-        
+
         color: rgb(32, 116, 135);
         background-clip: text;
         -webkit-background-clip: text;
         padding-bottom: 0.3rem;
         margin-top: 2rem;
         text-align: center;
+      }
+
+      h1:last-child{
+        font-size: 4rem;
+        color: black;
       }
 
       p {
@@ -405,7 +419,6 @@
           p:first-child {
             font-size: 2.2rem;
             font-weight: 800;
-
           }
 
           p:last-child {
@@ -413,7 +426,6 @@
             font-weight: 700;
           }
         }
-
       }
 
       .imagenPiePrimeraCaracteristica {
@@ -458,12 +470,8 @@
         font-size: 1.3rem;
         font-weight: 600;
       }
-
-
     }
   }
-
-
 
   //SERVICES
 
@@ -541,7 +549,6 @@
     }
 
     .inicioEjemplo {
-
       font-size: 1.2rem;
 
       .qqplotAnalisisDatos {
@@ -565,8 +572,8 @@
       }
     }
 
-    .interpretacionGeombar{
-      font-size:1.2rem
+    .interpretacionGeombar {
+      font-size: 1.2rem;
     }
 
     .contactanos {
@@ -592,11 +599,8 @@
         font-size: 1.3rem;
         font-weight: 600;
       }
-
-
     }
   }
-
 
   //LIMPIEZADATOS.JSX
 
@@ -606,7 +610,6 @@
     gap: 1rem;
 
     .inicioEjemplo {
-
       font-size: 1.2rem;
 
       display: flex;
@@ -628,7 +631,6 @@
           height: 30rem;
         }
       }
-
     }
     .contactanos {
       display: flex;
@@ -658,8 +660,6 @@
         font-size: 1.3rem;
         font-weight: 600;
       }
-
-
     }
   }
 
@@ -682,5 +682,4 @@
       margin-top: 3rem;
     }
   }
-
 }
