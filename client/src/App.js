@@ -13,7 +13,6 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
 import "./styles.scss"
-import Nosotros from "./pages/Nosotros";
 import Requerimientos from "./pages/Requerimientos";
 
 import "./fonts/gobCL_Bold.otf"
@@ -56,10 +55,7 @@ const router = createBrowserRouter([
         path: "/servicios/recoleccion",
         element: <RecoleccionDatos />
       },
-      {
-        path: "/nosotros",
-        element: <Nosotros />
-      },
+      
       {
         path: "/requerimientos",
         element: <Requerimientos/>
